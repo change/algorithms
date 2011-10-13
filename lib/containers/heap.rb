@@ -220,8 +220,8 @@ class Containers::Heap
       raise "Couldn't delete node from stored nodes hash" 
     end
     @size -= 1
-    
-    popped.value
+
+    popped
   end
   alias_method :next!, :pop
   
